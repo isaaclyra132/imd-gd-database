@@ -1,0 +1,5 @@
+courseno,secno,offeringdept,credithours,courselevel,instructorssn,semester,year,dayshours,roomno,noofstrudents
+
+courseno -> offeringdept,credithours,courselevel
+courseno,secno,semester,year -> dayshours,roomno,noofstrudents,instructorssn
+roomno,dayshours,semester,year -> instructorssn,courseno,secno
