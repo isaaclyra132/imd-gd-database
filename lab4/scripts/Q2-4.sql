@@ -1,25 +1,34 @@
-SELECT
-	*
+SELECT 
+	cname
 FROM
+	customers 
+WHERE 
+	cno 
+IN 
 	(	
-		customers
+		SELECT 
+			cno 
+		FROM 
+			orders 
+		NATURAL JOIN
+			employees 
+		NATURAL JOIN
+			zipcodes 
+		WHERE
+			city = "Wichita"
+	) 
+AND 
+	cno 
+NOT IN
+	(
+		SELECT 
+			cno 
+		FROM 
+			orders 
 		NATURAL JOIN
 			employees
-		NATURAL JOIN
-			zipcodes
-	)
-WHERE
-	city LIKE '%Wichita%';
-    
-    
-
-SELECT DISTINCT
-	*
-FROM
-	(
-		employees
-		NATURAL JOIN
-			zipcodes
-		NATURAL JOIN
-			orders
-    )
+        NATURAL JOIN 
+			zipcodes 
+        WHERE 
+			city != "Wichita"
+	);
