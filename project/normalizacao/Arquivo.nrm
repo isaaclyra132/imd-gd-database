@@ -1,0 +1,4 @@
+idArquivo,idEnvio,data64,tipoArquivo,extensao
+
+Envio,idArquivo -> idEnvio,data64,tipoArquivo,extensao
+idEnvio -> idArquivo,data64,tipoArquivo,extensao

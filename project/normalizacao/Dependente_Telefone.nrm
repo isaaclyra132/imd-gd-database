@@ -1,0 +1,4 @@
+codDependente,idUsuario,servidorMatricula,telefone
+
+Arquivo,telefone -> codDependente,idUsuario,servidorMatricula
+codDependente,idUsuario,servidorMatricula -> telefone

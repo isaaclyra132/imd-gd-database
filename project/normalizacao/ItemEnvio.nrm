@@ -1,0 +1,4 @@
+idItem,valorValidado,valorInformado,idEnvio
+
+idItem -> valorValidado,valorInformado,idEnvio
+idEnvio -> valorValidado,valorInformado,idItem

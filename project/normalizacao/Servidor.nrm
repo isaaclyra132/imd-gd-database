@@ -1,0 +1,4 @@
+nome,matricula,isAdmin,avatar,idUsuario
+
+matricula -> nome,isAdmin,avatar,idUsuario
+idUsuario -> nome,matricula,isAdmin,avatar

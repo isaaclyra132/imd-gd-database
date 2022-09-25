@@ -1,0 +1,4 @@
+codDependente,parentesco,nome,titulo,email,senha,ativo,autorizado,avatar,idUsuario,servidorMatricula
+
+codDependente -> parentesco,nome,titulo,email,senha,ativo,autorizado,avatar,servidorMatricula,idUsuario
+idUsuario,servidorMatricula -> parentesco,nome,titulo,email,senha,ativo,autorizado,avatar,codDependente

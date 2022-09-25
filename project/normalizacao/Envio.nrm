@@ -1,0 +1,4 @@
+idEnvio,mesRef,anoRef,tipoUsuario,dataCriacao,status,idUsuario
+
+idEnvio -> mesRef,anoRef,tipoUsuario,dataCriacao,status,idUsuario
+idUsuario -> mesRef,anoRef,tipoUsuario,dataCriacao,status,idEnvio
